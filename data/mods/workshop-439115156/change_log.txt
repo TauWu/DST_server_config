@@ -1,0 +1,16 @@
+T 12.4.4
+[*] fixed bug : related phoenix axe
+[*] buffed weapon 
+- two hande type : 50% absorption of damage in swing moment.
+- phoenix spear(frost type) : frost chance +10%
+- phoenix axe : buffed summon skill. adds fire attack to pickaxe type. reduced range of pickaxe type.
+- phoenix fire blade : A little more efficient flame attack.
+[*] Smite
+- cost 5 -> 10
+- adds short shield
+
+hotfix
+- sometimes occur error when you despawn shadow musha.
+
+T 12.4.8
+- fixed some bugs (occur with new official update)

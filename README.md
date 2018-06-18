@@ -1,2 +1,20 @@
-# DST_server_config
-一键配置DST服务器On Ubuntu Server
+# DST\_server\_config
+一键配置DST服务器 On Ubuntu Server
+
+## 基础信息
+创建日期 | 作者 | 项目名 | 中文名 
+--- | --- | --- | ---
+2018-06-17 | TauWoo | DST\_server\_config | 饥荒联机版一键配置Linux服务器指南
+
+## 写在前面
+- 作者默认 GitHub 的读者均 **熟悉** Linux 的常规操作，本配置指南中将不对基础操作做出注释，敬请谅解！
+- 饥荒联机版同时存在 Linux 和 Windows 版的独立服务器，如果您对 Linux 不熟悉，还请转投 Windows 服务器的配置方案～虽然本项目旨在一键完成服务器配置，但不对实际的效果做出保证（意思是出了问题的话，巧了我也不知道。。。）
+- Linux 相对于 Windows 服务器的优势在于不用加载图形化页面，可以将这部分资源省给游戏服务进程，但是每个进程还是需要占用 500~600MB 的内存空间。因此在添加洞穴的情况下，系统内存应当在 2GB 以上。
+
+## 配置流程
+- 使用 Steam CMD 下载游戏，并存放至指定目录
+- 运行 Don't Starve Togther Delicated Server
+- 创建运行脚本文件
+- 配置服务器基础信息
+- 添加服务器 Mod
+- 终了
