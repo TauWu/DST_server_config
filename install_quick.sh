@@ -59,4 +59,4 @@ cp -r $REPO_PATH/data/.klei ~/
 echo $TOKEN > $CLUSTER_PATH/cluster_token.txt
 
 # 配置 mods
-cp -read $REPO_PATH/data/mods $DST_SERVER_PATH
+cp -r $REPO_PATH/data/mods $DST_SERVER_PATH
