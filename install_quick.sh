@@ -14,10 +14,10 @@ echo "                                        "
 
 echo "请输入您的token!"
 read TOKEN
-echo "请输入您的服务器名称!"
-read SERVER_NAME
-echo "请输入您的服务器密码!"
-read SERVER_PWD
+# echo "请输入您的服务器名称!"
+# read SERVER_NAME
+# echo "请输入您的服务器密码!"
+# read SERVER_PWD
 
 # 创建必要的目录
 echo "开始创建必要的目录..."
@@ -57,3 +57,6 @@ tar -xvzf steamcmd_linux.tar.gz
 apt-get install libcurl4-gnutls-dev:i386
 cp -r $REPO_PATH/data/.klei ~/
 echo $TOKEN > $CLUSTER_PATH/cluster_token.txt
+
+# 配置 mods
+cp -read $REPO_PATH/data/mods $DST_SERVER_PATH
