@@ -524,7 +524,7 @@ local pos = Vector3(target.Transform:GetWorldPosition())
 		end
 end
 
-    if target.components.burnable and target.components.burnable:IsBurning() then
+    if target.components.burnable and target.components.burnable:IsBurning() and not target:HasTag("buzzard") then
         target.components.burnable:Extinguish()
     end
     if target.components.combat and not target:HasTag("companion") then

@@ -78,13 +78,18 @@ if leader then
 		SpawnPrefab("sparks").Transform:SetPosition(inst:GetPosition():Get())
 		SpawnPrefab("dr_warmer_loop").Transform:SetPosition(inst:GetPosition():Get())
 		SpawnPrefab("dr_hot_loop").Transform:SetPosition(v:GetPosition():Get())
+		
+		local fx = SpawnPrefab("firesplash_fx")
+		fx.Transform:SetScale(0.4, 0.4, 0.4)
+		fx.Transform:SetPosition(v:GetPosition():Get())
+		
 		end
 			if v.components.burnable and not v:HasTag("structure") and not v:HasTag("companion") and v.components.health and not v.components.health:IsDead() then
 			v.components.burnable:IsBurning()
             v.components.burnable:Ignite(true)
 			v.components.health:DoDelta(-4)
 			end
-			if v.components.burnable and v.components.burnable:IsBurning() then
+			if v.components.burnable and v.components.burnable:IsBurning() and not v:HasTag("buzzard") then
 			v.components.burnable:Extinguish()
 			end
 		end

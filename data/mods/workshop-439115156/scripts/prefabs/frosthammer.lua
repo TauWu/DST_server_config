@@ -378,7 +378,7 @@ SpawnPrefab("splash").Transform:SetPosition(inst:GetPosition():Get())
 	end	
 
 	if inst.boost then
-	if target ~= nil and not target:HasTag("companion") and not target:HasTag("yamcheb") and not target:HasTag("critter") then
+	if target ~= nil and not target:HasTag("smashable") and not target:HasTag("companion") and not target:HasTag("yamcheb") and not target:HasTag("yamche") and not target:HasTag("critter") then
 	if math.random() < freezechance1 and target.components.freezable and inst.level <250 then
         target.components.freezable:AddColdness(0.7)
        	local prefab = "icespike_fx_"..math.random(1,4)

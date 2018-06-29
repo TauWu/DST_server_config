@@ -111,154 +111,154 @@ inst.components.talker:Say(STRINGS.MUSHA_HAT_BROKEN.."\n"..STRINGS.MUSHA_ARMOR..
 if not inst.broken then
 
   if inst.level >=0 and inst.level <10 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.40)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.46)
     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV1)]\n"..STRINGS.MUSHA_ARMOR.."(40)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV1)]\n"..STRINGS.MUSHA_ARMOR.."(46)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
   elseif inst.level >=10 and inst.level <30 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.41)
-    inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV2)]\n"..STRINGS.MUSHA_ARMOR.."(41)"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
- elseif inst.level >=30 and inst.level <50 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.42)
-     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV3)]\n"..STRINGS.MUSHA_ARMOR.."(42)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
- elseif inst.level >=50 and inst.level <70 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.43)
-     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV4)]\n"..STRINGS.MUSHA_ARMOR.."(43)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
-  elseif inst.level >=70 and inst.level <90 then
- inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.44)
-     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV5)]\n"..STRINGS.MUSHA_ARMOR.."(44)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
- elseif inst.level >=90 and inst.level <120 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.45)
-     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV6)]\n"..STRINGS.MUSHA_ARMOR.."(45)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
- elseif inst.level >=120 and inst.level <150 then
-  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.46)
-     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
-     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV7)]\n"..STRINGS.MUSHA_ARMOR.."(46)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
-elseif inst.level >=150 and inst.level <180 then
 inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.47)
     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV8)]\n"..STRINGS.MUSHA_ARMOR.."(47)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
-elseif inst.level >=180 and inst.level <210 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.48)
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV2)]\n"..STRINGS.MUSHA_ARMOR.."(47)"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+ elseif inst.level >=30 and inst.level <50 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.48)
+     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV3)]\n"..STRINGS.MUSHA_ARMOR.."(48)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+ elseif inst.level >=50 and inst.level <70 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.49)
+     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV4)]\n"..STRINGS.MUSHA_ARMOR.."(49)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+  elseif inst.level >=70 and inst.level <90 then
+ inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.5)
+     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV5)]\n"..STRINGS.MUSHA_ARMOR.."(5)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+ elseif inst.level >=90 and inst.level <120 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.51)
+     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV6)]\n"..STRINGS.MUSHA_ARMOR.."(51)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+ elseif inst.level >=120 and inst.level <150 then
+  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.52)
+     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+     
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV7)]\n"..STRINGS.MUSHA_ARMOR.."(52)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+elseif inst.level >=150 and inst.level <180 then
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.53)
     inst.components.insulator.insulation = TUNING.INSULATION_SMALL
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV9)]\n"..STRINGS.MUSHA_ARMOR.."(48)\n"..STRINGS.MUSHA_ITEM_COOL.."(Small)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV8)]\n"..STRINGS.MUSHA_ARMOR.."(53)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
+elseif inst.level >=180 and inst.level <210 then
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.54)
+    inst.components.insulator.insulation = TUNING.INSULATION_SMALL
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV9)]\n"..STRINGS.MUSHA_ARMOR.."(54)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(Small)")
 elseif inst.level >=210 and inst.level <250 then
- inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.49)
+ inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.55)
      inst.components.insulator.insulation = TUNING.INSULATION_SMALL
  
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV10)]\n"..STRINGS.MUSHA_ARMOR.."(49)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV10)]\n"..STRINGS.MUSHA_ARMOR.."(55)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=250 and inst.level <350 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.50)
-     inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV11)]\n"..STRINGS.MUSHA_ARMOR.."(50)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=350 and inst.level <450 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.51)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV12)]\n"..STRINGS.MUSHA_ARMOR.."(51)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=450 and inst.level <550 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.52)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV13)]\n"..STRINGS.MUSHA_ARMOR.."(52)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=550 and inst.level <650 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.53)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV14)]\n"..STRINGS.MUSHA_ARMOR.."(53)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=650 and inst.level <750 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.54)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV15)]\n"..STRINGS.MUSHA_ARMOR.."(54)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=750 and inst.level <850 then
- inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.55)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
- 
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV16)]\n"..STRINGS.MUSHA_ARMOR.."(55)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=850 and inst.level <950 then
  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.56)
-      inst.components.insulator.insulation = TUNING.INSULATION_MED
-
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV17)]\n"..STRINGS.MUSHA_ARMOR.."(56)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=950 and inst.level <1050 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.57)
      inst.components.insulator.insulation = TUNING.INSULATION_MED
 
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV18)]\n"..STRINGS.MUSHA_ARMOR.."(57)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=1050 and inst.level <1200 then
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV11)]\n"..STRINGS.MUSHA_ARMOR.."(56)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=350 and inst.level <450 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.57)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV12)]\n"..STRINGS.MUSHA_ARMOR.."(57)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=450 and inst.level <550 then
  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.58)
       inst.components.insulator.insulation = TUNING.INSULATION_MED
 
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV19)]\n"..STRINGS.MUSHA_ARMOR.."(58)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=1200 and inst.level <1400 then
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV13)]\n"..STRINGS.MUSHA_ARMOR.."(58)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=550 and inst.level <650 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.59)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV14)]\n"..STRINGS.MUSHA_ARMOR.."(59)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=650 and inst.level <750 then
  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.60)
       inst.components.insulator.insulation = TUNING.INSULATION_MED
 
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV20)]\n"..STRINGS.MUSHA_ARMOR.."(60)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV15)]\n"..STRINGS.MUSHA_ARMOR.."(60)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=750 and inst.level <850 then
+ inst.components.armor:InitCondition( 99999999999999999999999999999999999999999999999999, 0.62)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+ 
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV16)]\n"..STRINGS.MUSHA_ARMOR.."(62)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=850 and inst.level <950 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.64)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV17)]\n"..STRINGS.MUSHA_ARMOR.."(64)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=950 and inst.level <1050 then
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.66)
+     inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV18)]\n"..STRINGS.MUSHA_ARMOR.."(66)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=1050 and inst.level <1200 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.68)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV19)]\n"..STRINGS.MUSHA_ARMOR.."(68)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=1200 and inst.level <1400 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.70)
+      inst.components.insulator.insulation = TUNING.INSULATION_MED
+
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV20)]\n"..STRINGS.MUSHA_ARMOR.."(70)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=1400 and inst.level <1600 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.62)
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.72)
 	inst.components.insulator.insulation = (TUNING.INSULATION_MED)
 	
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV21)]\n"..STRINGS.MUSHA_ARMOR.."(62)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV21)]\n"..STRINGS.MUSHA_ARMOR.."(72)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=1600 and inst.level <1800 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.64)
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.74)
       inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV22)]\n"..STRINGS.MUSHA_ARMOR.."(64)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV22)]\n"..STRINGS.MUSHA_ARMOR.."(74)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=1800 and inst.level <2000 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.66)
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.76)
       inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV23)]\n"..STRINGS.MUSHA_ARMOR.."(66)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV23)]\n"..STRINGS.MUSHA_ARMOR.."(76)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=2000 and inst.level <2200 then
- inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.68)
-      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
-    
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV24)]\n"..STRINGS.MUSHA_ARMOR.."(68)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
-elseif inst.level >=2200 and inst.level <2400 then
  inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.70)
       inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV25)]\n"..STRINGS.MUSHA_ARMOR.."(70)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV24)]\n"..STRINGS.MUSHA_ARMOR.."(70)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
+elseif inst.level >=2200 and inst.level <2400 then
+ inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.80)
+      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
+    
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV25)]\n"..STRINGS.MUSHA_ARMOR.."(80)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=2400 and inst.level <2600 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.72)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.82)
      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV26)]\n"..STRINGS.MUSHA_ARMOR.."(72)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV26)]\n"..STRINGS.MUSHA_ARMOR.."(82)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=2600 and inst.level <2800 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.74)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.84)
      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV27)]\n"..STRINGS.MUSHA_ARMOR.."(74)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV27)]\n"..STRINGS.MUSHA_ARMOR.."(84)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=2800 and inst.level <3000 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.76)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.86)
      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV28)]\n"..STRINGS.MUSHA_ARMOR.."(76)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV28)]\n"..STRINGS.MUSHA_ARMOR.."(86)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=3000 and inst.level <4000 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.78)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.88)
      inst.components.insulator.insulation = (TUNING.INSULATION_MED)
     
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV29)]\n"..STRINGS.MUSHA_ARMOR.."(78)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV29)]\n"..STRINGS.MUSHA_ARMOR.."(88)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 elseif inst.level >=4000 then
-inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.8)
+inst.components.armor:InitCondition(99999999999999999999999999999999999999999999999999, 0.9)
      inst.components.insulator.insulation = (TUNING.INSULATION_MED * 2)
-inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV30)]\n"..STRINGS.MUSHA_ARMOR.."(80)\n"..STRINGS.MUSHA_ITEM_COOL.."(MED)")
+inst.components.talker:Say("["..STRINGS.MUSHA_HAT_CAT.."(LV30)]\n"..STRINGS.MUSHA_ARMOR.."(90)\n"..STRINGS.MUSHA_ITEM_WARMNCOOL.."(MED)")
 
 end
 end
@@ -270,6 +270,13 @@ inst.broken = true
  	UpgradeArmor(inst)
 	inst.components.fueled:StopConsuming()        
  end
+ 
+ local function ChangeInsulation(inst)
+if TheWorld.state.issummer then
+    inst.components.insulator:SetSummer()
+elseif not TheWorld.state.issummer then
+ 	inst.components.insulator:SetWinter()
+    end end	
 -------- --------
 -------- --------
 local function forgelab(inst, data)
@@ -355,6 +362,7 @@ local function drop_Cat(inst, ranout)
                 owner.components.inventory:Unequip(EQUIPSLOTS.HEAD, true)
 		owner:DoTaskInTime(0.5, function()  owner.components.inventory:DropItem(inst) end)
 	end
+	ChangeInsulation(inst)	
 inst.components.fueled:StartConsuming()        
 inst.SoundEmitter:PlaySound("dontstarve/common/gem_shatter")
 if not inst.boost then
@@ -569,7 +577,8 @@ local function fn(sim)
 		inst.components.inventoryitem:SetOnDroppedFn( drop_Cat )
 		
         inst:AddComponent("insulator")
-		inst.components.insulator:SetSummer()
+		--inst.components.insulator:SetWinter()
+		--inst.components.insulator:SetSummer()
  
 	inst.level = 0
 	inst:ListenForEvent("levelup", levelexp)

@@ -207,7 +207,7 @@ STRINGS.MUSHA_TALK_ORDER_DALL_LOST = "Musha can't call Dall..."
 
 STRINGS.MUSHA_TALK_ORDER_ARONG_FOLLOW = "Arong, follow me!"
 STRINGS.MUSHA_TALK_ORDER_ARONG_STAY = "Arong, stay away!"
-STRINGS.MUSHA_TALK_ORDER_ARONG_SLEEPY = "He needs some rest..."
+STRINGS.MUSHA_TALK_ORDER_ARONG_SLEEPY = "He needs some rest..."  --can't order
 STRINGS.MUSHA_TALK_ORDER_ARONG_LOST = "Musha can't call Arong..."
 
 --bodyguard wilson
@@ -626,8 +626,8 @@ STRINGS.NAMES.PORTION_E = "Energy Drink"
 STRINGS.RECIPE_DESC.PORTION_E = "Energy Drink"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.PORTION_E = "Let me see...\n[Contains Caffein Apple:99%]"
 STRINGS.NAMES.CRISTAL = "Crystal Candy"
-STRINGS.RECIPE_DESC.CRISTAL = "Very delicious and\nsweet!"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.CRISTAL = "Looks like an unusual crystal."
+STRINGS.RECIPE_DESC.CRISTAL = "summon apple tree\ncan change Yamche's color"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CRISTAL = "Musha can change the color of Yamchae with this."
 STRINGS.NAMES.EXP = "Energy Essence"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.EXP = "It gives some EXP to the player."
 STRINGS.NAMES.EXP1000CHEAT = "Cheat Essence"

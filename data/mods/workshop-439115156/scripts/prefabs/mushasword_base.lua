@@ -226,7 +226,7 @@ SpawnPrefab("splash").Transform:SetPosition(inst:GetPosition():Get())
     if target.components.sleeper and target.components.sleeper:IsAsleep() then
         target.components.sleeper:WakeUp()
     end
-    if target.components.burnable and target.components.burnable:IsBurning() then
+    if target.components.burnable and target.components.burnable:IsBurning() and not target:HasTag("buzzard") then
         target.components.burnable:Extinguish()
     end
     if target.components.combat and not target:HasTag("companion") then

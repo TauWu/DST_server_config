@@ -3630,15 +3630,16 @@ local armor_mushab = AddRecipe("armor_mushab", {armora, GLOBAL.Ingredient("goose
 armor_mushab.tagneeded = false
 armor_mushab.builder_tag ="musha"	
 
-local hat_mwildcat = AddRecipe("hat_mwildcat", { GLOBAL.Ingredient("gears", 2), GLOBAL.Ingredient("boneshard", 8), GLOBAL.Ingredient("bluegem", 1)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mwildcat.xml", "hat_mwildcat.tex" )
-hat_mwildcat.tagneeded = false
-hat_mwildcat.builder_tag ="musha"
---rabbit 
-local hat_mbunny = AddRecipe("hat_mbunny", {GLOBAL.Ingredient("walrus_tusk", 1), GLOBAL.Ingredient("purplegem", 1), GLOBAL.Ingredient("rabbit", 3)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunny.xml", "hat_mbunny.tex" )
+--rabbit and cat
+local hat_mbunny = AddRecipe("hat_mbunny", {GLOBAL.Ingredient("cutgrass", 8), GLOBAL.Ingredient("redgem", 1), GLOBAL.Ingredient("goggleshat", 1)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunny.xml", "hat_mbunny.tex" )
 hat_mbunny.tagneeded = false
 hat_mbunny.builder_tag ="musha"
 
-local hat_mbunnya = AddRecipe("hat_mbunnya", {bunny_scout, iron_cat, crystal2 }, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunnya.xml", "hat_mbunnya.tex" )
+local hat_mwildcat = AddRecipe("hat_mwildcat", { bunny_scout, GLOBAL.Ingredient("purplegem", 2), GLOBAL.Ingredient("gears", 2)}, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mwildcat.xml", "hat_mwildcat.tex" )
+hat_mwildcat.tagneeded = false
+hat_mwildcat.builder_tag ="musha"
+
+local hat_mbunnya = AddRecipe("hat_mbunnya", {bunny_scout, GLOBAL.Ingredient("deserthat", 1), GLOBAL.Ingredient("walrus_tusk", 1) }, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunnya.xml", "hat_mbunnya.tex" )
 hat_mbunnya.tagneeded = false
 hat_mbunnya.builder_tag ="musha"
 
@@ -3813,15 +3814,16 @@ local armor_mushab = AddRecipe("armor_mushab", {armora, GLOBAL.Ingredient("goose
 armor_mushab.tagneeded = false
 armor_mushab.builder_tag ="musha"	
 
-local hat_mwildcat = AddRecipe("hat_mwildcat", { GLOBAL.Ingredient("gears", 4), GLOBAL.Ingredient("boneshard", 16), GLOBAL.Ingredient("bluegem", 2)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mwildcat.xml", "hat_mwildcat.tex" )
-hat_mwildcat.tagneeded = false
-hat_mwildcat.builder_tag ="musha"
---rabbit 
-local hat_mbunny = AddRecipe("hat_mbunny", {GLOBAL.Ingredient("walrus_tusk", 2), GLOBAL.Ingredient("purplegem", 2), GLOBAL.Ingredient("rabbit", 6)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunny.xml", "hat_mbunny.tex" )
+--rabbit and cat 2
+local hat_mbunny = AddRecipe("hat_mbunny", {GLOBAL.Ingredient("cutgrass", 12), GLOBAL.Ingredient("redgem", 2), GLOBAL.Ingredient("goggleshat", 1)}, RECIPETABS.MUSHA, TECH.SCIENCE_ONE, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunny.xml", "hat_mbunny.tex" )
 hat_mbunny.tagneeded = false
 hat_mbunny.builder_tag ="musha"
 
-local hat_mbunnya = AddRecipe("hat_mbunnya", {bunny_scout, iron_cat, crystal3 }, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunnya.xml", "hat_mbunnya.tex" )
+local hat_mwildcat = AddRecipe("hat_mwildcat", { bunny_scout, GLOBAL.Ingredient("purplegem", 4), GLOBAL.Ingredient("gears", 4)}, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mwildcat.xml", "hat_mwildcat.tex" )
+hat_mwildcat.tagneeded = false
+hat_mwildcat.builder_tag ="musha"
+
+local hat_mbunnya = AddRecipe("hat_mbunnya", {bunny_scout, GLOBAL.Ingredient("deserthat", 1), GLOBAL.Ingredient("walrus_tusk", 2) }, RECIPETABS.MUSHA, TECH.SCIENCE_TWO, nil, nil, nil, nil, nil, "images/inventoryimages/hat_mbunnya.xml", "hat_mbunnya.tex" )
 hat_mbunnya.tagneeded = false
 hat_mbunnya.builder_tag ="musha"
 
@@ -4663,7 +4665,7 @@ if v.components.health and not v.components.health:IsDead() and v.components.com
 local x,y,z = inst.Transform:GetWorldPosition()	
 local ents = TheSim:FindEntities(x, y, z, 12)
 for k,v in pairs(ents) do	
-	if v:IsValid() and v.entity:IsVisible() and v.components.health and not v.components.health:IsDead() and not (v:HasTag("berrythief") or v:HasTag("bird") or v:HasTag("butterfly")) and not v:HasTag("groundspike") and not v:HasTag("player") and not v:HasTag("stalkerminion") and not inst.components.rider ~= nil and not inst.components.rider:IsRiding() and not inst.sg:HasStateTag("moving") and not inst.sg:HasStateTag("attack") and not v:HasTag("structure") and v.components.combat and (v.components.combat.target == inst or v:HasTag("monster") or v:HasTag("burn") or v:HasTag("werepig") or v:HasTag("frog")) then		
+	if v:IsValid() and v.entity:IsVisible() and v.components.health and not v.components.health:IsDead() and not (v:HasTag("berrythief") or v:HasTag("bird") or v:HasTag("butterfly")) and not v:HasTag("groundspike") and not v:HasTag("player") and not v:HasTag("stalkerminion") and not v:HasTag("yamche") and not v:HasTag("companion") and not inst.components.rider ~= nil and not inst.components.rider:IsRiding() and not inst.sg:HasStateTag("moving") and not inst.sg:HasStateTag("attack") and not v:HasTag("structure") and v.components.combat and (v.components.combat.target == inst or v:HasTag("monster") or v:HasTag("burn") or v:HasTag("werepig") or v:HasTag("frog")) then		
 			
 	inst.components.locomotor:Stop()
 if --[[inst.switch and inst.active_valkyrie and]] not inst.casting then 

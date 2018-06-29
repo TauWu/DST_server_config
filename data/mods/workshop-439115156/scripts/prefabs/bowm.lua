@@ -399,7 +399,7 @@ SpawnPrefab("splash").Transform:SetPosition(inst:GetPosition():Get())
     end
  
 	-----
-if target ~= nil and not target:HasTag("smashable") and (target.components.burnable or target.components.freezable) then	
+if target ~= nil and not target:HasTag("smashable") and not target:HasTag("companion") and not target:HasTag("yamcheb") and not target:HasTag("yamche") and (target.components.burnable or target.components.freezable) then	
 	if target.components.locomotor and target.components.health and not target:HasTag("shadowcreature") and not target:HasTag("structure") and not target:HasTag("stalkerminion") and not target:HasTag("smashable") and not target:HasTag("alignwall") and not target:HasTag("shadowminion") and target.components.health and not target.components.health:IsDead() and not inst.boost then
 				if math.random() < poisone_1 and not inst.boost and inst.level <250 and not target:HasTag("slow_poison") then
         
@@ -522,7 +522,7 @@ end
     if target.components.sleeper and target.components.sleeper:IsAsleep() then
         target.components.sleeper:WakeUp()
     end
-    if target.components.burnable and target.components.burnable:IsBurning() then
+    if target.components.burnable and target.components.burnable:IsBurning() and not target:HasTag("buzzard") then
         target.components.burnable:Extinguish()
     end
     if target.components.combat ~= nil then

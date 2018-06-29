@@ -2199,7 +2199,7 @@ if inst.level < 430 and inst.active_valkyrie and v:HasTag("burn") and v.componen
             data.attacker.components.health:DoDelta(-10)
             data.attacker.components.burnable:Ignite()
 		end
-    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() then
+    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() and not data.attacker:HasTag("buzzard") then
         data.attacker.components.burnable:Extinguish()
         end 
 		 data.attacker.burn = true
@@ -2209,7 +2209,7 @@ if inst.level < 430 and inst.active_valkyrie and v:HasTag("burn") and v.componen
             data.attacker.components.health:DoDelta(-20)
             data.attacker.components.burnable:Ignite()
 		end
-    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() then
+    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() and not data.attacker:HasTag("buzzard") then
         data.attacker.components.burnable:Extinguish()
         end 
 		 data.attacker.burn = true
@@ -2219,7 +2219,7 @@ if inst.level < 430 and inst.active_valkyrie and v:HasTag("burn") and v.componen
             data.attacker.components.health:DoDelta(-30)
             data.attacker.components.burnable:Ignite()
 		end
-    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() then
+    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() and not data.attacker:HasTag("buzzard") then
         data.attacker.components.burnable:Extinguish()
         end
 		 data.attacker.burn = true
@@ -2229,7 +2229,7 @@ if inst.level < 430 and inst.active_valkyrie and v:HasTag("burn") and v.componen
             data.attacker.components.health:DoDelta(-40)
             data.attacker.components.burnable:Ignite()
 		end
-    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() then
+    if data.attacker and data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() and not data.attacker:HasTag("buzzard") then
         data.attacker.components.burnable:Extinguish()
         end
 		 data.attacker.burn = true
@@ -2497,7 +2497,7 @@ if other and not other:HasTag("stalkerminion") and not other:HasTag("smashable")
         other.components.freezable:AddColdness(0.1)
        -- other.components.freezable:SpawnShatterFX()
     end
-    if other.components.burnable and other.components.burnable:IsBurning() then
+    if other.components.burnable and other.components.burnable:IsBurning() and not other:HasTag("buzzard") then
         other.components.burnable:Extinguish()
 end
 end end
@@ -6014,7 +6014,7 @@ if weapon and weapon:HasTag("frost_hammer") then
             data.attacker.components.freezable:SpawnShatterFX()
     end 
 end	
-	if data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() then
+	if data.attacker.components.burnable and data.attacker.components.burnable:IsBurning() and not data.attacker:HasTag("buzzard") then
         data.attacker.components.burnable:Extinguish()
     end
 end		

@@ -1665,11 +1665,11 @@ end
 
 local function OnHitfire(inst, data)
 local other = data.target
-if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not other:HasTag("alignwall") and other.components.health and not other.components.health:IsDead() then
+if not inst.iceyamche and not other:HasTag("smashable") and not other:HasTag("shadowminion") and not other:HasTag("alignwall") and other.components.health and not other.components.health:IsDead() then
 
 	if math.random() < 0.3 then
 		SpawnPrefab("deer_fire_burst").Transform:SetPosition(other:GetPosition():Get())
-		if inst.level1 and not inst.iceyamche then
+		if inst.level1 then
 		elseif inst.level2 then
 		other.components.health:DoDelta(-3)
 		elseif inst.level3 then
@@ -1687,16 +1687,18 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
 		end
 		
 	else
+		
 		local fx = SpawnPrefab("firesplash_fx")
 		fx.Transform:SetScale(0.4, 0.4, 0.4)
 		fx.Transform:SetPosition(other:GetPosition():Get())
+		
 		
    --local pos = other:GetPosition()
     if other and other.components.burnable and not other:HasTag("structure") and inst.level1 then
 		if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1705,8 +1707,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level2 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1714,8 +1716,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level3 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1723,8 +1725,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level4 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1732,8 +1734,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level5 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1741,8 +1743,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level6 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1750,8 +1752,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level7 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1759,8 +1761,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level8 and not inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1769,8 +1771,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level2 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1778,8 +1780,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level3 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1787,8 +1789,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level4 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1796,8 +1798,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level5 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1805,8 +1807,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level6 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1814,8 +1816,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level7 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1823,8 +1825,8 @@ if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not ot
    elseif other and other.components.burnable and not other:HasTag("structure") and inst.level8 and inst.doctor then
         if not other:HasTag("buzzard") then
         other.components.burnable:Ignite()
-		elseif other:HasTag("buzzard") and math.random() < 0.1 then
-		other.components.burnable:Ignite()
+		--[[elseif other:HasTag("buzzard") and math.random() < 0.1 then
+		other.components.burnable:Ignite()]]
 		end
 		if other:HasTag("buzzard") and not other.components.burnable:IsBurning() then
 		SpawnPrefab("small_puff").Transform:SetPosition(other:GetPosition():Get()) end
@@ -1834,7 +1836,7 @@ elseif other and other:HasTag("musha") then
 	inst.components.combat:SetTarget(nil)
 	inst.components.combat:GiveUp()
     end
-    if other.components.burnable and other.components.burnable:IsBurning() then
+    if other.components.burnable and other.components.burnable:IsBurning() and not other:HasTag("buzzard") then
         other.components.burnable:Extinguish()
     end
 end
@@ -1843,7 +1845,7 @@ end
 
 local function OnHitfreeze(inst, data)
 local other = data.target
-if not other:HasTag("smashable") and not other:HasTag("shadowminion") and not other:HasTag("alignwall") and other.components.health and not other.components.health:IsDead() and inst.iceyamche then
+if inst.iceyamche and not other:HasTag("smashable") and not other:HasTag("shadowminion") and not other:HasTag("alignwall") and other.components.health and not other.components.health:IsDead() then
 	
 		--[[if inst.level1 then
 		elseif inst.level2 then
@@ -2287,6 +2289,122 @@ end
 end
 end
 
+local function blueone(inst)
+	
+	if inst.components.inventory then
+	inst.components.inventory:DropEverything() end
+	if inst.components.container then
+	inst.components.container:DropEverything() end
+	
+	SpawnPrefab("lightning_blue").Transform:SetPosition(inst.Transform:GetWorldPosition())
+  	SpawnPrefab("statue_transition_2").Transform:SetPosition(inst:GetPosition():Get())
+	SpawnPrefab("green_leaves").Transform:SetPosition(inst.Transform:GetWorldPosition())
+	--inst.sg:GoToState("walk")
+	
+if inst.level2 then
+	
+		local poo = SpawnPrefab("musha_teenice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level3 then
+	
+		local poo = SpawnPrefab("musha_tallrice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level4 then
+	
+		local poo = SpawnPrefab("musha_tallrrice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level5 then
+	
+		local poo = SpawnPrefab("musha_tallrrrice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level6 then
+
+		local poo = SpawnPrefab("musha_tallrrrrice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level7 then
+	
+		local poo = SpawnPrefab("musha_tallrrrrrice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level8 then
+	
+		local poo = SpawnPrefab("musha_rpice")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()		
+		
+end
+end
+
+local function fireone(inst)
+	
+	if inst.components.inventory then
+	inst.components.inventory:DropEverything() end
+	if inst.components.container then
+	inst.components.container:DropEverything() end
+	
+	SpawnPrefab("lightning_blue").Transform:SetPosition(inst.Transform:GetWorldPosition())
+  	SpawnPrefab("statue_transition_2").Transform:SetPosition(inst:GetPosition():Get())
+	SpawnPrefab("green_leaves").Transform:SetPosition(inst.Transform:GetWorldPosition())
+	--inst.sg:GoToState("walk")
+	
+if inst.level2 then
+	
+		local poo = SpawnPrefab("musha_teen")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level3 then
+	
+		local poo = SpawnPrefab("musha_tallr3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level4 then
+	
+		local poo = SpawnPrefab("musha_tallrr3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level5 then
+	
+		local poo = SpawnPrefab("musha_tallrrr3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level6 then
+
+		local poo = SpawnPrefab("musha_tallrrrr3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level7 then
+	
+		local poo = SpawnPrefab("musha_tallrrrrr3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()
+elseif inst.level8 then
+	
+		local poo = SpawnPrefab("musha_rp3")
+		poo.Transform:SetPosition(inst.Transform:GetWorldPosition())
+            ndie(inst)
+		inst:Remove()		
+		
+end
+end
+
 local function OnClose(inst) 
 if not inst.components.health:IsDead() then
 inst.open = false
@@ -2306,6 +2424,7 @@ end
 cooked(inst)
 
 if inst.iceyamche then
+	
 	local inv = inst.components.container 
     for i = 1, inv:GetNumSlots() do
         local item = inv:GetItemInSlot(i)
@@ -2314,8 +2433,43 @@ if inst.iceyamche then
 		end
 	end	
 end
+
+if not inst.iceyamche then
+	if inst.components.container ~= nil then
+
+	local inv = inst.components.container 
+    for i = 1, inv:GetNumSlots() do
+        local item = inv:GetItemInSlot(i)
+        if item == nil then
+            return false, false
+        end
+      
+        if item.prefab == "cristal" then
+            blueone(inst)
+        end
+    end
+	end
+	
+elseif inst.iceyamche then
+	if inst.components.container ~= nil then
+
+	local inv = inst.components.container 
+    for i = 1, inv:GetNumSlots() do
+        local item = inv:GetItemInSlot(i)
+        if item == nil then
+            return false, false
+        end
+      
+        if item.prefab == "cristal" then
+            fireone(inst)
+        end
+    end
+	end
+end
+
 end	
 end 
+
 ----------
 local function PhoenixSanityAura(inst, observer)
 	if inst.components.hunger:GetPercent() < .5 then
@@ -2806,11 +2960,11 @@ end)
 if food and food.components.edible and food.prefab == "cristal" then
 	local dark2 = SpawnPrefab("statue_transition_2")
 	dark2.Transform:SetPosition(inst:GetPosition():Get())
-	SpawnPrefab("yellow_leaves").Transform:SetPosition(inst:GetPosition():Get())
-	SpawnPrefab("orange_leaves").Transform:SetPosition(inst:GetPosition():Get())
+	--SpawnPrefab("yellow_leaves").Transform:SetPosition(inst:GetPosition():Get())
+	--SpawnPrefab("orange_leaves").Transform:SetPosition(inst:GetPosition():Get())
 	SpawnPrefab("green_leaves").Transform:SetPosition(inst:GetPosition():Get())
-	SpawnPrefab("red_leaves").Transform:SetPosition(inst:GetPosition():Get())
-    if math.random() < poopchance then
+	--SpawnPrefab("red_leaves").Transform:SetPosition(inst:GetPosition():Get())
+    --[[if math.random() < poopchance then
 		SpawnPrefab("flower_cave").Transform:SetPosition(inst:GetPosition():Get())
     elseif math.random() < poopchance then
 		SpawnPrefab("wormlight_plant").Transform:SetPosition(inst:GetPosition():Get())
@@ -2822,7 +2976,7 @@ if food and food.components.edible and food.prefab == "cristal" then
 		SpawnPrefab("flower_cave_triple").Transform:SetPosition(inst:GetPosition():Get())
     else
 		SpawnPrefab("wormlight_plant").Transform:SetPosition(inst:GetPosition():Get())
-	end
+	end]]
 		
 if food and food.components.edible and food.prefab == "cristal" and inst.level1 then
 	if inst.components.inventory then
@@ -2834,8 +2988,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level1 
 
 end
 if food and food.components.edible and food.prefab == "cristal" and inst.level2 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_eggs1")
@@ -2845,8 +2999,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level2 
     end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level3 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_eggs2")
@@ -2856,8 +3010,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level3 
 end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level4 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_eggs3")
@@ -2867,8 +3021,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level4 
 end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level5 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_egg1")
@@ -2878,8 +3032,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level5 
 end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level6 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_egg2")
@@ -2889,8 +3043,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level6 
 end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level7 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_egg3")
@@ -2900,8 +3054,8 @@ if food and food.components.edible and food.prefab == "cristal" and inst.level7 
 end
 
 if food and food.components.edible and food.prefab == "cristal" and inst.level8 then
-	if inst.components.container then
-	inst.components.container:DropEverything() end
+	if inst.components.container ~= nil then
+	inst.components.container:DropEverything() end 
 	if inst.components.inventory then
 	inst.components.inventory:DropEverything() end
 		local poo = SpawnPrefab("musha_egg8")

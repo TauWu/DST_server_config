@@ -1,6 +1,6 @@
 name = "[DST]Musha"
-version = "T 12.5.1"
-description = "[    Version :  T-12.5.1   ]\n-------------------------\n[        Information       ]\nStat-(L)   Skill-(K)  Visual-(O,P)\n[       Active Skills       ]\nLightning/Valkyrie-(R)  Shadow-(G)  Shield-(C) \nMusic/Sniff-(X)   Sleep/Wakeup-(T) \n[  Yamche  ]\nFollow-(Z)  Battle-(V)  Gather-(B)   DebugKey-(N)\n[   Arong   ]: Follow-(F1) [   Dall   ]: Follow-(F2) \nAuthor:  eunmanaz@naver.com"
+version = "T 12.6"
+description = "[    Version :  T-12.6   ]\n-------------------------\n[        Information       ]\nStat-(L)   Skill-(K)  Visual-(O,P)\n[       Active Skills       ]\nLightning/Valkyrie-(R)  Shadow-(G)  Shield-(C) \nMusic/Sniff-(X)   Sleep/Wakeup-(T) \n[  Yamche  ]\nFollow-(Z)  Battle-(V)  Gather-(B)   DebugKey-(N)\n[   Arong   ]: Follow-(F1) [   Dall   ]: Follow-(F2) \nAuthor:  eunmanaz@naver.com"
 author = "Sunnyyyyholic"
 --version_compatible = "T 12"
 --forumthread = "http://forums.kleientertainment.com/files/file/529-puppy-princess-full-version/"
@@ -1272,8 +1272,8 @@ configuration_options =
 		},
 		{
         name = "key10",
-        label = "Yamche- Debug key",
-        hover = "reset container",
+        label = "Musha- sleep badge",
+        hover = "turn on/off",
         options =
         {
             {description="TAB", data = 9},

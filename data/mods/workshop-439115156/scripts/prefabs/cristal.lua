@@ -11,7 +11,7 @@ if eater:HasTag("musha") then
 --eater:AddTag("lucky")
 --eater.components.talker:Say("[Buff]\nNext Lucky points x50 by repair")
 end
-if not eater:HasTag("yamche") then
+--if not eater:HasTag("yamche") then
 local poopchance = 0.5
 
 	local dark2 = SpawnPrefab("statue_transition_2")
@@ -19,7 +19,7 @@ local poopchance = 0.5
 	SpawnPrefab("green_leaves").Transform:SetPosition(eater:GetPosition():Get())
 	--SpawnPrefab("orange_leaves").Transform:SetPosition(eater:GetPosition():Get())
 	--SpawnPrefab("red_leaves").Transform:SetPosition(eater:GetPosition():Get())
-      if math.random() < 0.6 then
+      --[[if math.random() < 0.6 then
 		local poo = SpawnPrefab("wormlight_plant")
 		poo.Transform:SetPosition(eater.Transform:GetWorldPosition())	
 			SpawnPrefab("yellow_leaves").Transform:SetPosition(eater:GetPosition():Get())
@@ -35,12 +35,12 @@ local poopchance = 0.5
 		local poo = SpawnPrefab("flower_cave_triple")
 		poo.Transform:SetPosition(eater.Transform:GetWorldPosition())	
 			SpawnPrefab("yellow_leaves").Transform:SetPosition(eater:GetPosition():Get())
-    else
+    else]]
 		local poo = SpawnPrefab("apple_berry")
 		poo.Transform:SetPosition(eater.Transform:GetWorldPosition())	
 			SpawnPrefab("yellow_leaves").Transform:SetPosition(eater:GetPosition():Get())
-	end	
-end 
+	--end	
+--end 
 end
 
 local function fn()

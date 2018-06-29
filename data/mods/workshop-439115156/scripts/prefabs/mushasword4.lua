@@ -502,7 +502,7 @@ local pos = Vector3(target.Transform:GetWorldPosition())
 	fx3.Transform:SetScale(0.3, 0.3, 0.3)
 	fx3.Transform:SetPosition(pos:Get())
 	
-	if (target.components.burnable or target.components.freezable) and not target:HasTag("structure") then
+	if (target.components.burnable or target.components.freezable) and not target:HasTag("structure") and not target:HasTag("smashable") and not target:HasTag("companion") and not target:HasTag("yamcheb") and not target:HasTag("yamche") then
 	
 		if math.random() < poisone_1 and inst.boost and inst.level <250 and not target:HasTag("slow_poison") then
         
@@ -631,7 +631,7 @@ end
 	
 
 
-    if target.components.burnable and target.components.burnable:IsBurning() then
+    if target.components.burnable and target.components.burnable:IsBurning() and not target:HasTag("buzzard") then 
         target.components.burnable:Extinguish()
     end
 	
